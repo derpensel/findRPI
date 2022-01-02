@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import socket
 import nmap
 import os, subprocess 
@@ -52,6 +53,8 @@ def getRPI():
 			rpi.append(fuckme)
 			print(fuckme[0])
 
+	if not rpi:
+		print("no admin")
 	return rpi
 
 def main():
